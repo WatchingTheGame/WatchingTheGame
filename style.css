@@ -1,81 +1,141 @@
-body{
-    background-color: rgb(251,124,5);
-    font-family: 'Outfit';
-}
-
-.f{
+body {
+    background-color: rgb(251, 124, 5);
+    font-family: 'Outfit', sans-serif;
     color: white;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1{
-    font-weight: 1000;
-    font-size: 70px;
-}
-h2{
-    font-size: 30px;
-}
-
-main{
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 *{
-    padding:0;
-    
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    color: #07426a;
 }
 
-.contact-container{
-    height: 100vh;
-    justify-content: space-evenly;
-    align-items: center;
+.container {
+    width: 80%;
+    margin: auto;
 }
 
-.contact-left{
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 70px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+section {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul.podcast-links, ul.social-links {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul.podcast-links li, ul.social-links li {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: #ff994f;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: white;
+    color: #ff994f;
+}
+
+.members {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
 }
 
-.contact-left-title h2{
-    font-weight: 600;
-    font-size: 40px;
+.member {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
 }
 
-.contact-inputs{
-    width: 570px;
-    height: 50px;
-    border: none;
-    outline: none;
-    padding-left: 25px;
-    font-weight: 500;
-    border-radius: 50px;
-}
-
-.contact-left textarea{
-    height: 140px;
-    padding-top: 15px;
-    border-radius: 20px;
-}
-
-.contact-inputs:focus{
-    border: 2px solid #ff994f;
-
-}
-
-.contact-left button{
-   
-   width: 570px;
-    padding: 15px 30px;
-    font-size: 16px;
+.member ul {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
     border: none;
-    border-radius: 50px;
-    background: linear-gradient(270deg,#ff994f, #fff);
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(270deg, #ff994f, #fff);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: white;
+    color: #ff994f;
 }
