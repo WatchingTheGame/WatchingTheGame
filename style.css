@@ -32,11 +32,28 @@ h2 {
     font-weight: 600;
     text-align: center;
 }
+.pray-for-palestine {
+    text-align: center;
+}
+
+.pray-for-palestine img {
+    display: block;
+    margin: 0 auto;
+}
+
 
 h3 {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 2000;
+    margin-bottom: 17px;
+    margin-top: 0;
+    color: green;
 }
 
 .about {
@@ -139,4 +156,33 @@ a:hover {
     color: #ff994f;
 }
 
+h3{
+    text-align: center;
+}
+/*.ticker {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ff994f;
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.ticker p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 10s linear infinite;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
 
