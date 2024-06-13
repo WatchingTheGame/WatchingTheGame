@@ -1,6 +1,6 @@
 body {
     background-color: rgb(251, 124, 5);
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Apple Chancery', sans-serif; /* Changed font-family */
     color: #07426a;
     margin: 0;
     padding: 0;
@@ -18,12 +18,9 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
-}
-
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
 }
 
 h1 {
@@ -84,28 +81,28 @@ ul.podcast-links, ul.social-links {
 }
 
 ul.podcast-links li, ul.social-links li {
-    margin: 10px;
+    margin: 15px;
 }
 
 a {
     text-decoration: none;
     color: white;
-    background: #ff994f;
+    background: linear-gradient(270deg, #ff994f, #07426a);
     padding: 10px 20px;
     border-radius: 20px;
     transition: .4s;
 }
 
 a:hover {
-    background: rgb(255, 255, 255);
-    color: #ff994f;
+    background: #07426a;
+    color: #fff;
 }
 
 .members {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 15px;
 }
 
 .member {
@@ -117,7 +114,7 @@ a:hover {
 .member ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -138,6 +135,7 @@ a:hover {
     border-radius: 25px;
     outline: none;
     font-size: 16px;
+    font-family: 'Apple Chancery', sans-serif; /* Changed font-family */
 }
 
 .contact-form textarea {
@@ -151,17 +149,18 @@ a:hover {
     font-size: 16px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(270deg, #ff994f, #fff);
+    background: linear-gradient(270deg, #ff994f, #07426a);
     cursor: pointer;
     transition: 0.3s;
+    font-family: 'Apple Chancery', sans-serif; /* Changed font-family */
 }
 
 .contact-form button:hover {
-    background: white;
-    color: #ff994f;
+    background: #07426a;
+    color: black;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
@@ -169,12 +168,13 @@ h3{
     width: 100%;
     overflow: hidden;
     background-color: #ff994f;
-    color: white;
+    color: #07426a;
     padding: 10px 0;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 600;
     position: relative;
+    font-family: 'Apple Chancery', sans-serif; /* Changed font-family */
 }
 
 .ticker p {
@@ -193,21 +193,8 @@ h3{
 }
 
 @media (max-width: 600px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .about iframe {
-        width: 100%;
-        height: auto;
-    }
-
     header img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 }
