@@ -153,11 +153,12 @@ a:hover {
     cursor: pointer;
     transition: 0.3s;
     font-family: 'Apple Chancery', sans-serif; /* Changed font-family */
+    color: white; /* Set font color to white */
 }
 
 .contact-form button:hover {
     background: #07426a;
-    color: white;
+    color: white; /* Font color on hover */
 }
 
 h3 {
