@@ -62,7 +62,7 @@ h4 {
     text-align: center;
     margin: 20px 0;
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 1000;
 }
 
 section {
@@ -91,7 +91,14 @@ a {
     padding: 10px 20px;
     border-radius: 20px;
     transition: .4s;
+    font-weight: 1000;
 }
+.member h3 {
+    font-size: 24px;
+    font-weight: 1000; 
+    margin-bottom: 20px;
+}
+
 
 a:hover {
     background: #07426a;
@@ -103,12 +110,14 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
+    
 }
 
 .member {
     text-align: center;
     flex: 1;
     min-width: 200px;
+    font-weight: 1000px;
 }
 
 .member ul {
@@ -118,7 +127,10 @@ a:hover {
     padding: 0;
     margin: 0;
     list-style: none;
+    
 }
+
+
 
 .contact-form {
     display: flex;
@@ -152,6 +164,7 @@ a:hover {
     background: linear-gradient(270deg, #ff994f, #07426a);
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 1000;
     font-family: 'Apple Chancery', sans-serif; /* Changed font-family */
     color: white; /* Set font color to white */
 }
@@ -159,7 +172,9 @@ a:hover {
 .contact-form button:hover {
     background: #07426a;
     color: white; /* Font color on hover */
+    font-weight: 1000;
 }
+
 
 h3 {
     text-align: center;
@@ -168,12 +183,11 @@ h3 {
 .ticker {
     width: 100%;
     overflow: hidden;
-    background-color: #ff994f;
     color: #07426a;
     padding: 10px 0;
     box-sizing: border-box;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 1000;
     position: relative;
     font-family: 'Apple Chancery', sans-serif; /* Changed font-family */
 }
@@ -198,4 +212,46 @@ h3 {
         max-width: 100%;
         height: auto;
     }
+}
+footer {
+    background-color: #07426a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure footer is on top of other content */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.pray-for-palestine {
+    text-align: center;
+    margin-bottom: 40px; /* Adjust this value as needed */
+}
+
+.pray-for-palestine img {
+    display: block;
+    margin: 0 auto;
+}
+
+.pray-for-palestine h4 {
+    font-size: 32px;
+    font-weight: 2000;
+    margin-bottom: 17px;
+    margin-top: 0;
+    color: green;
+   
+}
+
+.pray-for-palestine a {
+    display: block;
+    margin-top: 10px; /* Add margin above the link if needed */
+    
 }
